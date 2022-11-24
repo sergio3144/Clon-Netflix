@@ -139,8 +139,8 @@ body {
   }
   .header .seccion .form .form__btn {
     font-size: 15px;
-    height: 30px;
-    width: 100px;
+    height: 40px;
+    width: 120px;
     padding: 5px;
   }
   .header .seccion .form .form__btn .form__img {
@@ -151,4 +151,9 @@ body {
   .form .form__input {
     margin-bottom: 5px;
   }
+}
+.particion {
+  background-color: #222222;
+  width: 100%;
+  height: 8px;
 }/*# sourceMappingURL=style.css.map */
