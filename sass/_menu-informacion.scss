@@ -1,0 +1,165 @@
+.container {
+    background-color: black;
+    color: white;
+    .tv {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        .tv__information {
+            text-align: center;
+            margin-top: 50px;
+            .tv__title {
+                font-size: 40px;
+                letter-spacing: 1px;
+                margin-bottom: 30px;
+            }
+            .tv__parrafo {
+                font-size: 20px;
+                max-width: 450px;
+                font-weight: 500;
+            }
+        }
+        .tv__image {
+            width: 350px;
+            margin: 20px 0 30px 100px
+        }
+        @media(max-width: 917px) {
+            .tv__information {
+                margin: 20px 5px 0 5px;
+                .tv__title {
+                    font-size: 30px;
+                }
+                .tv__parrafo {
+                    font-size: 16px;
+                }
+            }
+            .tv__image {
+                width: 300px;
+                margin: 0;
+                margin-top: 2px;
+            }
+        }
+    }
+    .dowloand {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
+        flex-wrap: wrap-reverse;
+        .dowloand__img {
+            margin-top: 50px;
+            margin-bottom: 10px;
+            width: 260px;
+        }
+        .dowloand__information {
+            max-width: 600px;
+            .dowloand__title {
+                font-size: 40px;
+                margin-bottom: 20px;
+            }
+            .dowloand__parrafo {
+                font-size: 20px;
+            }
+        }
+        @media(max-width: 917px) {
+            .dowloand__information {
+                margin: 20px 5px 0 5px;
+                text-align: center;
+                .dowloand__title {
+                    font-size: 30px;
+                    max-width: 500px;
+                }
+                .dowloand__parrafo {
+                    font-size: 16px;
+                }
+            }
+            .dowloand__img {
+                width: 200px;
+                object-fit: cover;
+                margin: 0;
+                margin-top: 40px;
+            }
+        }
+    }
+    .ilimit {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+        flex-wrap: wrap;
+        .ilimit__information {
+            .ilimit__title {
+                font-size: 45px;
+                margin-bottom: 20px;
+            }
+            .ilimit__parrafo {
+                font-size: 19px;
+                max-width: 500px;
+            }
+        }
+        .ilimit__img {
+            width: 400px;
+            margin: 80px 0 80px 0;
+        }
+        @media(max-width: 917px) {
+            .ilimit__information {
+                margin: 20px 5px 0 5px;
+                text-align: center;
+                .ilimit__title {
+                    font-size: 30px;
+                    max-width: 500px;
+                }
+                .ilimit__parrafo {
+                    font-size: 16px;
+                }
+            }
+            .ilimit__img {
+                width: 300px;
+                margin: 0;
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+    .kirds {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+        flex-wrap: wrap-reverse;
+        .kirds__img {
+            width: 400px;
+            margin: 50px 0 50px 0;
+        }
+        .kirds__title {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+        .kirds__parrafo {
+            font-size: 19px;
+            max-width: 500px;
+        }
+        @media(max-width: 917px) {
+            .kirds__img {
+                margin: 0;
+                margin-top: 40px;
+                margin-bottom: 40px;
+                width: 300px;
+            }
+            .kirds__information {
+                margin: 20px 5px 0 5px;
+                text-align: center;
+                .kirds__title {
+                    font-size: 30px;
+                    max-width: 500px;
+                }
+                .kirds__parrafo {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
