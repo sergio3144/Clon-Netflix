@@ -82,14 +82,14 @@ body {
 }
 .header .form .form__input {
   width: 500px;
-  height: 60px;
+  height: 50px;
   outline: none;
   font-size: 15px;
   padding-left: 10px;
 }
 .header .form .form__btn {
   background-color: red;
-  height: 60px;
+  height: 50px;
   border: none;
   width: 200px;
   cursor: pointer;
@@ -100,4 +100,55 @@ body {
 .header .form .form__btn .form__img {
   width: 15px;
   margin-left: 10px;
+}
+
+@media (max-width: 590px) {
+  .header {
+    padding: 12px 15px 0 15px;
+  }
+  .header .header__nav .header__logo {
+    width: 95px;
+  }
+  .header .header__nav .header__inicio .header__btn {
+    width: 90px;
+    font-size: 13px;
+    height: 30px;
+  }
+  .header .header__nav .header__inicio .header__btn--world .title {
+    font-size: 13px;
+  }
+  .header .seccion {
+    margin-top: 150px;
+  }
+  .header .seccion .seccion__title {
+    font-size: 30px;
+  }
+  .header .seccion .seccion__p {
+    font-size: 17px;
+  }
+  .header .seccion .seccion__p2 {
+    font-size: 17px;
+    margin-bottom: 30px;
+  }
+  .header .seccion .form {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .header .seccion .form .form__input {
+    width: 300px;
+  }
+  .header .seccion .form .form__btn {
+    font-size: 15px;
+    height: 30px;
+    width: 100px;
+    padding: 5px;
+  }
+  .header .seccion .form .form__btn .form__img {
+    width: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .form .form__input {
+    margin-bottom: 5px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -53,7 +53,7 @@ body {
             }
         }
     }
-
+    
     .seccion {
         color: white;
         margin: 0 auto;
@@ -79,14 +79,14 @@ body {
         margin-top: 30px;
         .form__input {
             width: 500px;
-            height: 60px;
+            height: 50px;
             outline: none;
             font-size: 15px;
             padding-left: 10px;
         }
         .form__btn {
             background-color: red;
-            height: 60px;
+            height: 50px;
             border: none;
             width: 200px;
             cursor: pointer;
@@ -97,6 +97,66 @@ body {
                 width: 15px;
                 margin-left: 10px;
             }
+        }
+    }
+}
+
+@media(max-width: 590px) {
+    .header {
+        padding: 12px 15px 0 15px;
+        .header__nav {
+            .header__logo {
+                width: 95px;
+            }
+            .header__inicio {
+                .header__btn {
+                    width: 90px;
+                    font-size: 13px;
+                    height: 30px;
+                }
+                .header__btn--world {
+                    .title {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        .seccion {
+            margin-top: 150px;
+            .seccion__title {
+                font-size: 30px;
+            }
+            .seccion__p {
+                font-size: 17px;
+            }
+            .seccion__p2 {
+                font-size: 17px;
+                margin-bottom: 30px;
+            }
+            .form {
+                max-width: 300px;
+                margin: 0 auto;
+
+                .form__input {
+                    width: 300px;
+                }
+                .form__btn {
+                    font-size: 15px;
+                    height: 30px;
+                    width: 100px;
+                    padding: 5px;
+                    .form__img {
+                        width: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:800px) {
+    .form {
+        .form__input {
+            margin-bottom: 5px;
         }
     }
 }
