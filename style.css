@@ -172,8 +172,105 @@
 .preguntas .preguntas__title {
   font-size: 45px;
   text-align: center;
+  margin-bottom: 60px;
+}
+.preguntas .preguntas__container {
+  display: flex;
+  background-color: #303030;
+  justify-content: space-between;
+  padding: 20px 25px 20px 25px;
+  margin: 0 auto;
+  margin-top: 20px;
+  max-width: 700px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  position: relative;
+}
+.preguntas .preguntas__container .preguntas__pregunta .preguntas__question {
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.preguntas .preguntas__container .preguntas__pregunta .preguntas__response {
+  font-size: 20px;
+  position: absolute;
+  margin-bottom: 20px;
+  opacity: 1;
+  opacity: 0;
+}
+.preguntas .preguntas__container .preguntas__pregunta .activeP {
+  position: relative;
+  opacity: 0.7;
+  transform: translateY(20px);
+  transition: 0.8s;
+}
+.preguntas .preguntas__container .preguntas__img {
+  width: 30px;
+  height: 30px;
+  transition: 0.5s;
+}
+.preguntas .preguntas__container .activeImg {
+  transform: rotate(90deg);
+  transition: 0.5s;
+}
+.preguntas .preguntas__titleInput {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+.preguntas .form {
+  margin-top: 30px;
+  text-align: center;
+}
+.preguntas .form .form__input {
+  width: 500px;
+  height: 50px;
+  outline: none;
+  font-size: 15px;
+  padding-left: 10px;
+}
+.preguntas .form .form__btn {
+  background-color: red;
+  height: 50px;
+  border: none;
+  width: 200px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: -5px;
+  color: white;
+}
+.preguntas .form .form__btn .form__img {
+  width: 15px;
+  margin-left: 10px;
 }
 
+@media (max-width: 600px) {
+  .preguntas {
+    padding: 20px 15px 0 15px;
+  }
+  .preguntas .preguntas__title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .preguntas .preguntas__container {
+    padding: 10px;
+  }
+  .preguntas .preguntas__container .preguntas__pregunta {
+    padding: 0;
+  }
+  .preguntas .preguntas__container .preguntas__pregunta .preguntas__question {
+    font-size: 17px;
+    margin-top: 5px;
+  }
+  .preguntas .preguntas__container .preguntas__pregunta .preguntas__response {
+    font-size: 17px;
+  }
+  .preguntas .preguntas__container .preguntas__img {
+    width: 20px;
+    height: 20px;
+  }
+}
 * {
   margin: 0;
   padding: 0;

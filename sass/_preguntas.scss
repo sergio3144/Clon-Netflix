@@ -1,3 +1,4 @@
+
 .preguntas {
     background-color: black;
     color: white;
@@ -5,5 +6,104 @@
     .preguntas__title {
         font-size: 45px;
         text-align: center;
+        margin-bottom: 60px;
+    }
+    .preguntas__container {
+        display: flex;
+        background-color: #303030;
+        justify-content: space-between;
+        padding: 20px 25px 20px 25px;
+        margin: 0 auto;
+        margin-top: 20px;
+        max-width: 700px;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+        position: relative;
+        .preguntas__pregunta {
+            .preguntas__question {
+                font-size: 25px;
+                font-weight: 500;
+                letter-spacing: 1px;
+            }
+            .preguntas__response {
+                font-size: 20px;
+                position: absolute;
+                margin-bottom: 20px;
+                opacity: 1;
+                opacity: 0;
+            }
+            .activeP {
+                position: relative;
+                opacity: .7;
+                transform: translateY(20px);
+                transition: .8s;
+            }
+        }
+        .preguntas__img {
+            width: 30px;
+            height: 30px;
+            transition: .5s;
+        }
+        .activeImg {
+            transform: rotate(90deg);
+            transition: .5s;
+        }
+    }
+    .preguntas__titleInput {
+        text-align: center;
+        margin-top: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+    }
+    .form {
+        margin-top: 30px;
+        text-align: center;
+        .form__input {
+            width: 500px;
+            height: 50px;
+            outline: none;
+            font-size: 15px;
+            padding-left: 10px;
+        }
+        .form__btn {
+            background-color: red;
+            height: 50px;
+            border: none;
+            width: 200px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-left: -5px;
+            color: white;
+            .form__img {
+                width: 15px;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+@media(max-width: 600px) {
+    .preguntas {
+        padding: 20px 15px 0 15px;
+        .preguntas__title {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        .preguntas__container {
+            padding: 10px;
+            .preguntas__pregunta {
+                padding: 0;
+                .preguntas__question {
+                    font-size: 17px;
+                    margin-top: 5px;
+                }
+                .preguntas__response {
+                    font-size: 17px;
+                }
+            }
+            .preguntas__img {
+                width: 20px;
+                height: 20px;
+            }
+        }
     }
 }
