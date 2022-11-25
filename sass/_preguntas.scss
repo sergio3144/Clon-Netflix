@@ -2,22 +2,22 @@
 .preguntas {
     background-color: black;
     color: white;
-    padding: 70px;
+    padding: 30px;
     .preguntas__title {
         font-size: 45px;
         text-align: center;
         margin-bottom: 60px;
     }
     .preguntas__container {
+        cursor: pointer;
         display: flex;
         background-color: #303030;
         justify-content: space-between;
         padding: 20px 25px 20px 25px;
         margin: 0 auto;
         margin-top: 20px;
-        max-width: 700px;
+        max-width: 900px;
         font-family: Arial, Helvetica, sans-serif;
-        cursor: pointer;
         position: relative;
         .preguntas__pregunta {
             .preguntas__question {
@@ -29,7 +29,7 @@
                 font-size: 20px;
                 position: absolute;
                 margin-bottom: 20px;
-                opacity: 1;
+                z-index: -1;
                 opacity: 0;
             }
             .activeP {
@@ -37,6 +37,7 @@
                 opacity: .7;
                 transform: translateY(20px);
                 transition: .8s;
+                z-index: 1;
             }
         }
         .preguntas__img {
@@ -54,6 +55,7 @@
         margin-top: 50px;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: 500;
+        font-size: 20px;
     }
     .form {
         margin-top: 30px;
@@ -104,6 +106,32 @@
                 width: 20px;
                 height: 20px;
             }
+        }
+    }
+}
+
+@media(max-width: 590px) {
+    .preguntas {
+        .form {
+            max-width: 300px;
+            margin: 0 auto;
+            margin-top: 30px;
+            .form__input {
+                width: 300px;
+            }
+            .form__btn {
+                font-size: 15px;
+                height: 40px;
+                width: 120px;
+                padding: 5px;
+                margin-bottom: 30px;
+                .form__img {
+                    width: 10px;
+                }
+            }
+        }
+        .preguntas__titleInput {
+            font-size: 16px;
         }
     }
 }

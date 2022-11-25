@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;800&display=swap');
 @import "./sass/menu-informacion";
 @import "./sass/preguntas";
+@import "./sass/footer";
 * {
     margin: 0;
     padding: 0;
@@ -31,17 +32,21 @@ body {
                 margin-left: 15px;
                 cursor: pointer;
                 background-color: red;
-                color: white;
                 font-size: 18px;
                 padding: 5px;
                 border: none;
                 border-radius: 3px;
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
             }
             .header__btn--world {
                 display: flex;
                 justify-content: space-evenly;
                 background-color: black;
                 border: 1px solid white;
+                color: white;
                 .world {
                     width: 20px;
                     height: 20px;
