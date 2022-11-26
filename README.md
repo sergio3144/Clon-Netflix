@@ -1,4 +1,7 @@
  <h3>🔥Clon de Netflix🔥 
- <p>Proyecto realizado en la interfaz de la plataforma conocida como Netflix
- -Link del proyecto 👇  
+ <p>Interfaz realizada de plataforma conocida como Netflix<p>
+ <p>La cual tiene funciones como dirigir al usuario a iniciar sesion 🔥 
+ -Link del proyecto 👇 <br>
+ https://sergio3144.github.io/Clon-Netflix/
+ 
    
